@@ -69,4 +69,14 @@ var myObj = {
 };
 console.log(myObj.gift);
 
+function checkObject(checkProperty){
+  if (myObj.hasOwnProperty(checkProperty)){
+    return myObj[checkProperty];
+  } else {
+    return "Property '" + checkProperty + "' property does not exist";
+  }
+}
+console.log(checkObject("pet"));
+console.log(checkObject("bed"));
+console.log(checkObject("good"));
 
