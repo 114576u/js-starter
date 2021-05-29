@@ -35,3 +35,8 @@ console.log(compareEquality(10, "10"));
 console.log(compareEquality(10, 10));
 console.log(compareEquality(10, 9+1));
 
+var q = Math.floor(1.23)
+console.log(q);
+q = Math.ceil(1.23);
+console.log(q);
+
