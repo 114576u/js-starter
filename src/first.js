@@ -46,3 +46,16 @@ var remainder;
 remainder = 11 % 3;
 console.log(remainder);
 
+var a = 3, b = 17, c = 12;
+a = a + 12;
+a += 1;
+console.log(a);
+console.log(b--);
+c -=2;
+console.log(c)
+
+var thisIsAString = "string";
+var thisIsAStringToo = 'another string';
+console.log(thisIsAString);
+console.log(thisIsAStringToo);
+
