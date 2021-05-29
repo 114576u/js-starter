@@ -40,3 +40,33 @@ console.log(q);
 q = Math.ceil(1.23);
 console.log(q);
 
+
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1, 
+  "friends": ["everything!"]
+};
+console.log(ourDog);
+console.log(ourDog.legs);
+console.log(ourDog["name"]);
+var otherDog = ourDog;
+console.log(otherDog);
+otherDog.name="Pirena";
+console.log(otherDog);
+console.log(ourDog);
+
+ourDog.bark = "bup-bup";
+console.log(ourDog);
+
+delete ourDog.bark;
+console.log(ourDog);
+
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+console.log(myObj.gift);
+
+
