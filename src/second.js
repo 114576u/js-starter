@@ -34,3 +34,4 @@ function compareEquality(a, b) {
 console.log(compareEquality(10, "10"));
 console.log(compareEquality(10, 10));
 console.log(compareEquality(10, 9+1));
+
