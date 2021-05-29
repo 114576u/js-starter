@@ -80,3 +80,33 @@ console.log(checkObject("pet"));
 console.log(checkObject("bed"));
 console.log(checkObject("good"));
 
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+var gloveBoxContents = myStorage.car.inside;
+console.log(gloveBoxContents);[]
+console.log(myStorage.car.outside.trunk);
+console.log(myStorage.car.inside["passenger seat"]);
+
+var myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"]
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"]
+  }
+];
+var secondTree = myPlants[1].list;
+console.log(myPlants[1]);
+console.log(myPlants[1].list[1]);
+console.log(secondTree);
