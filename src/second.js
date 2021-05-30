@@ -141,8 +141,35 @@ function updateRecords(id, prop, value) {
   } else if (prop === "tracks") {
     collection[id][prop] = collection[id][prop] || [];
     collection[id][prop].push(value);
+  } else {
+    collection[id][prop] = value;
   }
   return collection;
 }
 updateRecords(5439, "artist", "ABBA");
+console.log(collection);
+updateRecords(2468, "tracks", "test");
+console.log(collection);
+
+
+var myArray = [];
+var i = 0;
+while (i < 5) {
+  myArray.push(i);
+  i++;
+}
+console.log("myArray->" + myArray);
+
+var ourArray = [];
+for(var i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+console.log("ourArray->" + ourArray);
+
+
+var ourArray = [];
+for (var i = 0; i < 10; i+= 2) {
+  ourArray.push(i);
+}
+console.log("ourArray->" + ourArray);
 
