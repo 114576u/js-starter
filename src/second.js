@@ -263,9 +263,25 @@ function freezeObj() {
   try {
     MATH_CONSTANTS.PI = 99;
   } catch ( ex ) {
+    // see error message in console
     console.log(ex);
   }
   return MATH_CONSTANTS.PI;
 }
 const PI = freezeObj();
 console.log(PI);
+
+var magic = () => {
+  return new Date();
+};
+console.log(magic);
+
+const theMagic = () => new Date();
+console.log(theMagic);
+
+var myConcat = function (arr1, arr2) {
+  return arr1.concat(arr2);
+};
+console.log(myConcat([1,2],[3,4,5]));
+
+
