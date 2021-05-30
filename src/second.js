@@ -294,8 +294,25 @@ const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
 //  return squaredIntegers;
 //}
 const squareList = (arr) => {
-  const squaredIntegers = arr.filter(num => num > 4).map(num => num*num);
+  const squaredIntegers = arr.filter(num => num > 4)
+    .filter(num => Number.isInteger(num))
+    .map(num => num*num);
   return squaredIntegers;
 }
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
+
+const sum = (function() {
+  return function sum(x, y, z) {
+    const args = [ x, y, z];
+    return args.reduce( (a, b) => a+b, 0);
+  };
+})();
+console.log(sum(1, 2, 3));
+
+const sumTwo = (function() {
+  return function sumTwo(...args) {
+    return args.reduce( (a, b) => a+b, 0);
+  };
+})();
+console.log(sumTwo(1,2,3,4,5));
