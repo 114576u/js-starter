@@ -339,3 +339,9 @@ class SpaceShuttle {
 var apollo = new SpaceShuttle('Mars');
 console.log(apollo.targetPlanet);
 
+export const capitalizeString = str => str.toUpperCase();
+
+var t = capitalizeString("thisIsAnotherString");
+console.log(t);
+
+
