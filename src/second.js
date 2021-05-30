@@ -287,4 +287,15 @@ console.log(myConcat([1,2],[3,4,5]));
 var myConcatTwo = (arr1, arr2) => arr1.concat(arr2);
 console.log(myConcatTwo([0,1,2],[3,4,5]));
 
-
+// higher order arrow functions
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+//const squareList = (arr) => {
+//  const squaredIntegers = arr;
+//  return squaredIntegers;
+//}
+const squareList = (arr) => {
+  const squaredIntegers = arr.filter(num => num > 4).map(num => num*num);
+  return squaredIntegers;
+}
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
