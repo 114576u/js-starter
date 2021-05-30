@@ -223,3 +223,49 @@ function randomWholeNum() {
 console.log(randomWholeNum());
 console.log(randomNumberBetween0and19);
 
+function convertToInteger(str) {
+  return parseInt(str);
+}
+convertToInteger("56");
+console.log(convertToInteger("60"));
+
+function checkEqual(a, b) {
+  return a === b ? true : false;
+}
+console.log(checkEqual(1, 2));
+console.log(checkEqual(1, "1"));
+console.log(checkEqual("1", "1"));
+
+const noChange = "this is a constant";
+console.log(noChange);
+console.log(noChange + " and so");
+
+// update contents of a const array:
+const s = [5, 7, 3];
+function editInPlace() {
+  "use strict";
+  //s = [2, 5, 6];
+  s[0] = 1;
+  s[1] = "5";
+  s[2] = 2;
+  return s;
+}
+console.log(editInPlace());
+
+function freezeObj() {
+  "use strict";
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+
+  Object.freeze(MATH_CONSTANTS);
+
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch ( ex ) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI);
