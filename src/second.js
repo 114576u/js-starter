@@ -324,3 +324,18 @@ const person = {
 const greeting = `Hello, my name is ${person.name}! I am ${person.age} years old.` ;
 console.log(greeting);
 
+
+var SSpaceShuttle = function (targetPlanet) {
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SSpaceShuttle('Jupiter');
+console.log(zeus.targetPlanet);
+
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+var apollo = new SpaceShuttle('Mars');
+console.log(apollo.targetPlanet);
+
