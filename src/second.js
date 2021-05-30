@@ -173,3 +173,19 @@ for (var i = 0; i < 10; i+= 2) {
 }
 console.log("ourArray->" + ourArray);
 
+// senars
+for (var i = 1; i < 10; i+= 2){
+  ourArray.push(i);
+}
+console.log(ourArray);
+
+
+var ourArray = [9, 10, 11, 12, 13, 14, 15];
+var ourTotal = 0;
+
+for (var i = 0; i < ourArray.length; i++){
+  ourTotal += ourArray[i];
+}
+console.log(ourTotal);
+
+
