@@ -201,3 +201,13 @@ function mulitplyAll(arr) {
 var product = mulitplyAll([[1, 2],[3, 4],[1, 2]]);
 console.log(product);
 
+var myArray = [];
+var i = 10;
+
+do {
+  myArray.push(i);
+  i++;
+} while (i < 5);
+
+console.log(myArray);
+
